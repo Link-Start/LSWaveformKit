@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!--
+        LSWaveformKit 隐私合规清单
+
+        本库是一个音频波形可视化库，主要功能包括：
+        1. 音频录制
+        2. 音频播放
+        3. 波形可视化
+        4. 频谱分析
+
+        隐私原因说明：
+        - NSPrivacyAccessedAPICategoryMicrophone: 用于录音功能
+        - NSPrivacyAccessedAPICategoryFileTimestamp: 用于音频文件的创建时间戳
+    -->
+
+    <!-- 麦克风访问 -->
+    <key>NSPrivacyAccessedAPICategoryMicrophone</key>
+    <dict>
+        <key>NSPrivacyAccessedAPICategoryReasons</key>
+        <array>
+            <!-- CA92.1: 用于应用内的音频录制功能 -->
+            <string>CA92.1</string>
+        </array>
+    </dict>
+
+    <!-- 文件时间戳访问 -->
+    <key>NSPrivacyAccessedAPICategoryFileTimestamp</key>
+    <dict>
+        <key>NSPrivacyAccessedAPICategoryReasons</key>
+        <array>
+            <!-- C617.1: 用于记录和管理音频文件的创建时间 -->
+            <string>C617.1</string>
+        </array>
+    </dict>
+
+    <!-- 注意：以下 API 本库不使用，但如果应用需要，请自行添加到 Info.plist 中 -->
+
+    <!-- 相机访问 (不使用) -->
+    <!--
+    <key>NSPrivacyAccessedAPICategoryCamera</key>
+    <dict>
+        <key>NSPrivacyAccessedAPICategoryReasons</key>
+        <array>
+            <string></string>
+        </array>
+    </dict>
+    -->
+
+    <!-- 照片库访问 (不使用) -->
+    <!--
+    <key>NSPrivacyAccessedAPICategoryPhotos</key>
+    <dict>
+        <key>NSPrivacyAccessedAPICategoryReasons</key>
+        <array>
+            <string></string>
+        </array>
+    </dict>
+    -->
+
+    <!-- 位置数据访问 (不使用) -->
+    <!--
+    <key>NSPrivacyAccessedAPICategoryLocation</key>
+    <dict>
+        <key>NSPrivacyAccessedAPICategoryReasons</key>
+        <array>
+            <string></string>
+        </array>
+    </dict>
+    -->
+
+    <!-- 广告标识符访问 (不使用) -->
+    <!--
+    <key>NSPrivacyAccessedAPICategoryAdvertisingId</key>
+    <dict>
+        <key>NSPrivacyAccessedAPICategoryReasons</key>
+        <array>
+            <string></string>
+        </array>
+    </dict>
+    -->
+
+    <!-- 用户默认设置访问 (不使用) -->
+    <!--
+    <key>NSPrivacyAccessedAPICategoryUserDefaults</key>
+    <dict>
+        <key>NSPrivacyAccessedAPICategoryReasons</key>
+        <array>
+            <string></string>
+        </array>
+    </dict>
+    -->
+
+    <!-- 跟踪访问 (不使用) -->
+    <!--
+    <key>NSPrivacyTracking</key>
+    <false/>
+    -->
+</dict>
+</plist>
