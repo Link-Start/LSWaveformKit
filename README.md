@@ -25,14 +25,14 @@
 在 Xcode 中，通过 `File > Add Package Dependencies` 添加：
 
 ```
-https://github.com/your-username/LSWaveformKit
+https://github.com/Link-Start/LSWaveformKit
 ```
 
 或者在 `Package.swift` 中添加：
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/your-username/LSWaveformKit.git", from: "1.0.0")
+    .package(url: "https://github.com/Link-Start/LSWaveformKit.git", from: "1.0.0")
 ]
 ```
 
@@ -220,7 +220,6 @@ let image = try drawer.waveformImage(from: audioURL)
 
 ## 📚 文档
 
-- [API 文档](https://your-username.github.io/LSWaveformKit/)
 - [示例代码](Examples/)
 - [更新日志](CHANGELOG.md)
 
@@ -241,8 +240,8 @@ LSWaveformKit 采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详�
 ## 📮 联系方式
 
 - 作者: Link
-- 项目主页: [https://github.com/your-username/LSWaveformKit](https://github.com/your-username/LSWaveformKit)
-- 问题反馈: [GitHub Issues](https://github.com/your-username/LSWaveformKit/issues)
+- 项目主页: [https://github.com/Link-Start/LSWaveformKit](https://github.com/Link-Start/LSWaveformKit)
+- 问题反馈: [GitHub Issues](https://github.com/Link-Start/LSWaveformKit/issues)
 
 ---
 

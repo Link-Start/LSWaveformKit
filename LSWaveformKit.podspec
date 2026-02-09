@@ -18,11 +18,11 @@ LSWaveformKit 是一个功能强大、高度可定制的音频波形可视化框
 适用于音乐播放器、录音应用、语音助手、播客应用等场景。
                    DESC
 
-  s.homepage         = 'https://github.com/your-username/LSWaveformKit'
-  s.screenshots     = 'https://github.com/your-username/LSWaveformKit/blob/main/Assets/Demo.png'
+  s.homepage         = 'https://github.com/Link-Start/LSWaveformKit'
+  s.screenshots     = 'https://github.com/Link-Start/LSWaveformKit/blob/main/Assets/Demo.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Link' => 'your-email@example.com' }
-  s.source           = { :git => 'https://github.com/your-username/LSWaveformKit.git', :tag => s.version.to_s }
+  s.author           = { 'Link' => 'github@link-start.dev' }
+  s.source           = { :git => 'https://github.com/Link-Start/LSWaveformKit.git', :tag => s.version.to_s }
   
   s.ios.deployment_target = '13.0'
   s.swift_version = '6.0'
