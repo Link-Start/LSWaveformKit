@@ -10,6 +10,7 @@ import Foundation
 import AVFoundation
 
 /// 音频会话管理器
+@MainActor
 public class LSAudioSession {
 
     // MARK: - Singleton

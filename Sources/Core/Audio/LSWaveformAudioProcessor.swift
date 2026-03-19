@@ -52,6 +52,7 @@ public protocol LSWaveformAudioProcessorDelegate: AnyObject {
 // MARK: - Audio Processor Class
 
 /// 音频处理器 - 负责录音、播放和音频分析
+@MainActor
 public class LSWaveformAudioProcessor: NSObject {
 
     // MARK: - Properties
@@ -252,7 +253,10 @@ public class LSWaveformAudioProcessor: NSObject {
         stopUpdateTimer()
 
         updateTimer = Timer.scheduledTimer(withTimeInterval: updateInterval, repeats: true) { [weak self] _ in
-            self?.updateAmplitude()
+            guard let self = self else { return }
+            MainActor.assumeIsolated {
+                self.updateAmplitude()
+            }
         }
 
         if let timer = updateTimer {
